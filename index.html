@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+
+</head>
+
+<body>
+<div id="sample">
+  <div style="width: 100%; display: flex; justify-content: space-between">
+    <div id="myDiagramDiv" style="flex-grow: 1; height: 95vh; background-color: #fff;"></div>
+	<script>
+		var $ = go.GraphObject.make;
+		var myDiagram =
+		  $(go.Diagram, "myDiagramDiv",
+			{
+			  "undoManager.isEnabled": true, // enable Ctrl-Z to undo and Ctrl-Y to redo
+
+			  "draggingTool.isEnabled": false,
+			  layout: $(go.TreeLayout, // specify a Diagram.layout : TreeLayout, GridLayout, ForceDirectedLayout, LayeredDigraphLayout, CircularLayout
+						{ angle: 90, nodeSpacing: 10, layerSpacing: 30 })
+			});
+
+		// the template we defined earlier
+		myDiagram.nodeTemplate =
+		  $(go.Node, "Auto",
+			$(go.Shape, "Rectangle",
+			  new go.Binding("fill", "color")),
+			$(go.TextBlock, "Default Text",
+			  { margin: 12, stroke: "white", font: "bold 16px sans-serif", textAlign: "center" },
+			  new go.Binding("text", "name"))
+		  );
+		 
+		myDiagram.linkTemplate =
+		  $(go.Link,
+			{ routing: go.Link.Orthogonal, corner: 10 },
+			$(go.Shape, { strokeWidth: 3, stroke: null },
+				new go.Binding("stroke", "color")),
+			$(go.Shape, { toArrow: "Standard", stroke: null },
+				new go.Binding("fill", "color")));
+		
+		var model = $(go.TreeModel);
+		model.nodeDataArray =
+		[
+		  { key: "1000",              name: "Direktorius", color: "#165629"},
+		  { key: "1", parent: "1000", name: "", color: "#165629"},
+		  
+		  { key: "2", parent: "1", name: "Vartotojų aptarnavimo skyriaus vedėjas", color: "#582F68", "category":"linkToLink"},
+		  { key: "9", parent: "2", name: "Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
+		  
+		  { key: "3", parent: "1", name: "Vaikų literatūros skyriaus vedėjas", color: "#582F68" },
+		  { key: "10", parent: "3", name: "Vyr. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
+		  
+		  { key: "4", parent: "1", name: "Direktoriaus pavaduotojas", color: "#582F68"},
+		  { key: "100", parent: "4", name: "Vabalninko \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n \n Juostaviečių \n Vyresn. bibliotekininkas \n \n Skrebiškių  \n Vyresn. bibliotekininkas \n \n Kupreliškio \n Vyresn. bibliotekininkas \n \n Kratiškių \n Vyresn. bibliotekininkas \n \n Medeikių \n Vyresn. bibliotekininkas \n \n Pabiržės \n Vyresn. bibliotekininkas \n \n Obelaukių \n Vyresn. bibliotekininkas\n \n Papilio \n Vyresn. bibliotekininkas \n \n Pasvaliečių \n Vyresn. bibliotekininkas ", color: "#9C8343"},
+		  { key: "101", parent: "4", name: "Germaniškio \n Vyresn. bibliotekininkas \n \n Kirdonių \n Vyresn. bibliotekininkas \n \n Kučgalio  \n Vyresn. bibliotekininkas \n \n Kvietkų \n Vyresn. bibliotekininkas \n \n Meilūnų \n Vyresn. bibliotekininkas \n \n Nausėdžių \n Vyresn. bibliotekininkas \n \n N. Radviliškio \n Vyresn. bibliotekininkas \n \n Pačeriaukštės \n Vyresn. bibliotekininkas \n \n Parovėjos \n Vyresn. bibliotekininkas \n \n Užušilių \n Vyresn. bibliotekininkas", color: "#9C8343"},
+		  { key: "102", parent: "4", name: "Jono ir Adolfo Mekų \n palikimo studijų centras \n \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
+		  
+		  { key: "5", parent: "1", name: "Personalo administratorius", color: "#582F68"},
+		  
+		  { key: "6", parent: "1", name: "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", color: "#582F68"},
+		  { key: "11", parent: "6", name: "Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Bibliotekinių procesų automatizavumo inžinierius", color: "#9C8343"},
+		  
+		  { key: "7", parent: "1", name: "Ūkio skyriaus vedėjas", color: "#582F68"},
+		  { key: "12", parent: "7", name: "Elektrikas \n Vairuotojas \n Darbininkas \n Darbininkas \n Kiemsargis \n Viešosios bibliotekos valytojas \n Viešosios bibliotekos valytojas \n Filialo valytojas \n Užušilių f. kūrikas \n Parovėjos f. kūrikas \n Meilūnų f. kūrikas \n Nausėdžių f. kūrikas", color: "#9C8343"},
+		  
+		  { key: "8", parent: "1", name: "Vyriausiasis buhalteris", color: "#582F68"},
+		  { key: "13", parent: "8", name: "Apskaitininkas", color: "#9C8343"}
+		  
+		];
+		myDiagram.model = model;
+		
+		function printDiagram() {
+		  var svgWindow = window.open();
+		  if (!svgWindow) return;  // failure to open a new Window
+		  var printSize = new go.Size(700, 960);
+		  var bnds = myDiagram.documentBounds;
+		  var x = bnds.x;
+		  var y = bnds.y;
+		  while (y < bnds.bottom) {
+			while (x < bnds.right) {
+			  var svg = myDiagram.makeSVG({ scale: 1.0, position: new go.Point(x, y), size: printSize });
+			  svgWindow.document.body.appendChild(svg);
+			  x += printSize.width;
+			}
+			x = bnds.x;
+			y += printSize.height;
+		  }
+		  setTimeout(function() { svgWindow.print(); }, 1);
+		}
+	</script>
+  </div>
+  <p>
+  
+  </p>
+  <p>
+  
+  </p>
+  <textarea id="mySavedModel" style="width:100%;height:300px">
+  
+  </textarea>
+  <button onclick="printDiagram()">Print Diagram Using SVG</button>
+</div>
+</body>
+
+</html>
