@@ -40,9 +40,9 @@
 		  $(go.Link,
 			{ corner: 10 }, // routing: go.Link.Orthogonal //  curve: go.Curve.Bezier, 
 			$(go.Shape, { strokeWidth: 3, stroke: null },
-				new go.Binding("stroke", "color")),
-			$(go.Shape, { toArrow: "Standard", stroke: null },
-				new go.Binding("fill", "color")));
+				new go.Binding("stroke", "color")),);
+			//$(go.Shape, { toArrow: "Standard", stroke: null },
+				//new go.Binding("fill", "color")));
 		
 		var model = $(go.TreeModel);
 		model.nodeDataArray =
