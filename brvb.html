@@ -17,7 +17,10 @@
 		  $(go.Diagram, "myDiagramDiv",
 			{
 			  "undoManager.isEnabled": true, // enable Ctrl-Z to undo and Ctrl-Y to redo
-
+			  initialContentAlignment: go.Spot.Left,
+			  initialAutoScale: go.AutoScale.Uniform,
+			  isReadOnly: true, // do not allow users to modify or select in this view
+			  allowSelect: false,
 			  "draggingTool.isEnabled": false,
 			  layout: $(go.TreeLayout, // specify a Diagram.layout : TreeLayout, GridLayout, ForceDirectedLayout, LayeredDigraphLayout, CircularLayout
 						{ angle: 90, nodeSpacing: 10, layerSpacing: 30 })
