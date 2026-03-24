@@ -38,7 +38,7 @@
 		 
 		myDiagram.linkTemplate =
 		  $(go.Link,
-			{ curve: go.Curve.Bezier, corner: 10 }, // routing: go.Link.Orthogonal
+			{ corner: 10 }, // routing: go.Link.Orthogonal //  curve: go.Curve.Bezier, 
 			$(go.Shape, { strokeWidth: 3, stroke: null },
 				new go.Binding("stroke", "color")),
 			$(go.Shape, { toArrow: "Standard", stroke: null },
