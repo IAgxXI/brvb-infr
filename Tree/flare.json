@@ -1,0 +1,92 @@
+{
+ "name": "Direktorius",
+ "children": [
+  {
+   "name": "Vartotojų aptarnavimo skyriaus vedėjas",
+   "children": [
+    {"name": "Vyresn. bibliotekininkas", "size": 8833},
+    {"name": "Vyresn. bibliotekininkas", "size": 1732},
+    {"name": "Vyresn. bibliotekininkas", "size": 3623},
+    {"name": "Vyresn. bibliotekininkas", "size": 10066},
+	{"name": "Vyresn. bibliotekininkas", "size": 10066},
+	{"name": "Bibliotekininkas", "size": 10066},
+	{"name": "Bibliotekininkas", "size": 10066},
+	{"name": "Bibliotekininkas", "size": 10066},
+	{"name": "Bibliotekininkas", "size": 10066},
+	{"name": "Bibliotekininkas", "size": 10066}
+   ]
+  },
+  {
+   "name": "Vaikų literatūros skyriaus vedėjas",
+   "children": [
+    {"name": "Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Vyresn. bibliotekininkas", "size": 8833}
+   ]
+  },
+  {
+   "name": "Direktoriaus pavaduotoja",
+   "children": [
+    {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833},
+	{"name": "Juostaviečių \n Bibliotekininkas", "size": 8833},
+	{"name": "Skrebiškių  \n Bibliotekininkas", "size": 8833},
+	{"name": "Kupreliškio \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Kratiškių \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Medeikių \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Pabiržės \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Obelaukių \n Bibliotekininkas", "size": 8833},
+	{"name": "Papilio \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Pasvaliečių \n Bibliotekininkas", "size": 8833},
+	{"name": "Germaniškio \n Bibliotekininkas", "size": 8833},
+	{"name": "Kirdonių \n Bibliotekininkas", "size": 8833},
+	{"name": "Kučgalio  \n Bibliotekininkas", "size": 8833},
+	{"name": "Kvietkų \n Bibliotekininkas", "size": 8833},
+	{"name": "Meilūnų \n Bibliotekininkas", "size": 8833},
+	{"name": "Nausėdžių \n Bibliotekininkas", "size": 8833},
+	{"name": "N. Radviliškio \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Pačeriaukštės \n Bibliotekininkas", "size": 8833},
+	{"name": "Parovėjos \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Užušilių \n Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Jono ir Adolfo Mekų palikimo studijų centras \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", "size": 8833}
+   ]
+  },
+  {
+   "name": "Personalo administratorė"
+  },
+  {
+   "name": "Archyvaras"
+  },
+  {
+   "name": "Kultūros projektų vadovas"
+  },
+  {
+   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas"
+  },
+  {
+   "name": "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas",
+   "children": [
+    {"name": "Vyresn. bibliotekininkas", "size": 8833},
+	{"name": "Bibliotekininkas", "size": 8833},
+	{"name": "Bibliotekininkas", "size": 8833},
+	{"name": "Bibliotekininkas", "size": 8833}
+   ]
+  },
+  {
+   "name": "Ūkio skyriaus vedėjas",
+   "children": [
+    {"name": "Elektrikas", "size": 8833},
+	{"name": "Vairuotojas", "size": 8833},
+	{"name": "Darbininkas", "size": 8833},
+	{"name": "Valytoja", "size": 8833},
+	{"name": "Meistras", "size": 8833}
+   ]
+  },
+  {
+   "name": "Vyriausiasis buhalteris",
+   "children": [
+    {"name": "Apskaitininkas", "size": 8833}
+   ]
+  }
+ ]
+}
