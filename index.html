@@ -47,32 +47,36 @@
 		var model = $(go.TreeModel);
 		model.nodeDataArray =
 		[
-		  { key: "1",              name: "Direktorius", color: "#165629"},
-		  //{ key: "1", parent: "1000", name: "", color: "#165629"},
-		  
-		  { key: "2", parent: "1", name: "Vartotojų aptarnavimo skyriaus vedėjas", color: "#582F68", "category":"linkToLink"},
-		  { key: "9", parent: "2", name: "Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
-		  
-		  { key: "3", parent: "1", name: "Vaikų literatūros skyriaus vedėjas", color: "#582F68" },
-		  { key: "10", parent: "3", name: "Vyr. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
-		  
-		  { key: "4", parent: "1", name: "Direktoriaus pavaduotojas", color: "#582F68"},
-		  { key: "100", parent: "4", name: "Vabalninko \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n \n Juostaviečių \n Vyresn. bibliotekininkas \n \n Skrebiškių  \n Vyresn. bibliotekininkas \n \n Kupreliškio \n Vyresn. bibliotekininkas \n \n Kratiškių \n Vyresn. bibliotekininkas \n \n Medeikių \n Vyresn. bibliotekininkas \n \n Pabiržės \n Vyresn. bibliotekininkas \n \n Obelaukių \n Vyresn. bibliotekininkas\n \n Papilio \n Vyresn. bibliotekininkas \n \n Pasvaliečių \n Vyresn. bibliotekininkas ", color: "#9C8343"},
-		  { key: "101", parent: "100", name: "Germaniškio \n Vyresn. bibliotekininkas \n \n Kirdonių \n Vyresn. bibliotekininkas \n \n Kučgalio  \n Vyresn. bibliotekininkas \n \n Kvietkų \n Vyresn. bibliotekininkas \n \n Meilūnų \n Vyresn. bibliotekininkas \n \n Nausėdžių \n Vyresn. bibliotekininkas \n \n N. Radviliškio \n Vyresn. bibliotekininkas \n \n Pačeriaukštės \n Vyresn. bibliotekininkas \n \n Parovėjos \n Vyresn. bibliotekininkas \n \n Užušilių \n Vyresn. bibliotekininkas", color: "#9C8343"},
-		  { key: "102", parent: "4", name: "Jono ir Adolfo Mekų \n palikimo studijų centras \n \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
-		  
-		  { key: "5", parent: "1", name: "Personalo administratorius", color: "#582F68"},
-
-		  { key: "14", parent: "1", name: "Informacinių technologijų ir bibliotekos paslaugų specialistas", color: "#582F68"},
+			{ key: "1",              name: "Direktorius", color: "#165629"},
+			//{ key: "1", parent: "1000", name: "", color: "#165629"},
 			
-		  { key: "6", parent: "1", name: "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", color: "#582F68"},
-		  { key: "11", parent: "6", name: "Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
+			{ key: "2", parent: "1", name: "Vartotojų aptarnavimo skyriaus vedėjas", color: "#582F68", "category":"linkToLink"},
+				{ key: "9", parent: "2", name: "Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
 		  
-		  { key: "7", parent: "1", name: "Ūkio skyriaus vedėjas", color: "#582F68"},
-		  { key: "12", parent: "7", name: "Elektrikas \n Vairuotojas \n Darbininkas \n Darbininkas \n Kiemsargis \n Viešosios bibliotekos valytojas \n Viešosios bibliotekos valytojas \n Filialo valytojas \n Užušilių f. kūrikas \n Parovėjos f. kūrikas \n Meilūnų f. kūrikas \n Nausėdžių f. kūrikas", color: "#9C8343"},
+			{ key: "3", parent: "1", name: "Vaikų literatūros skyriaus vedėjas", color: "#582F68" },
+				{ key: "10", parent: "3", name: "Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
 		  
-		  { key: "8", parent: "1", name: "Vyriausiasis buhalteris", color: "#582F68"},
-		  { key: "13", parent: "8", name: "Apskaitininkas", color: "#9C8343"}
+			{ key: "4", parent: "1", name: "Direktoriaus pavaduotoja", color: "#582F68"},
+				{ key: "100", parent: "4", name: "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas \n \n Juostaviečių \n Bibliotekininkas \n \n Skrebiškių  \n Bibliotekininkas \n \n Kupreliškio \n Vyresn. bibliotekininkas \n \n Kratiškių \n Vyresn. bibliotekininkas \n \n Medeikių \n Vyresn. bibliotekininkas \n \n Pabiržės \n Vyresn. bibliotekininkas \n \n Obelaukių \n Bibliotekininkas \n \n Papilio \n Vyresn. bibliotekininkas \n \n Pasvaliečių \n Bibliotekininkas", color: "#9C8343"},
+				{ key: "101", parent: "100", name: "Germaniškio \n Bibliotekininkas \n \n Kirdonių \n Bibliotekininkas \n \n Kučgalio  \n Bibliotekininkas \n \n Kvietkų \n Bibliotekininkas \n \n Meilūnų \n Bibliotekininkas \n \n Nausėdžių \n Bibliotekininkas \n \n N. Radviliškio \n Vyresn. bibliotekininkas \n \n Pačeriaukštės \n Bibliotekininkas \n \n Parovėjos \n Vyresn. bibliotekininkas \n \n Užušilių \n Vyresn. bibliotekininkas", color: "#9C8343"},
+				{ key: "102", parent: "4", name: "Jono ir Adolfo Mekų \n palikimo studijų centras \n \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", color: "#9C8343"},
+		  
+			{ key: "5", parent: "1", name: "Personalo administratorė", color: "#582F68"},
+
+			{ key: "5", parent: "1", name: "Archyvaras", color: "#582F68"},
+			
+			{ key: "15", parent: "1", name: "Kultūros projektų vadovas", color: "#582F68"},
+
+			{ key: "14", parent: "1", name: "Informacinių technologijų ir bibliotekos paslaugų specialistas", color: "#582F68"},
+			
+			{ key: "6", parent: "1", name: "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", color: "#582F68"},
+				{ key: "11", parent: "6", name: "Vyresn. bibliotekininkas \n Bibliotekininkas \n Bibliotekininkas \n Bibliotekininkas", color: "#9C8343"},
+		  
+			{ key: "7", parent: "1", name: "Ūkio skyriaus vedėjas", color: "#582F68"},
+				{ key: "12", parent: "7", name: "Elektrikas \n Vairuotojas \n Darbininkas \n Valytoja \n Meistras", color: "#9C8343"},
+		  
+			{ key: "8", parent: "1", name: "Vyriausiasis buhalteris", color: "#582F68"},
+				{ key: "13", parent: "8", name: "Apskaitininkas", color: "#9C8343"}
 		  
 		];
 		myDiagram.model = model;
