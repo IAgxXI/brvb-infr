@@ -1,0 +1,14 @@
+{
+  "name": "@observablehq/plot-tree-tidy-json",
+  "main": "3e1dac3ce340bfed@95.js",
+  "version": "95.0.0",
+  "homepage": "https://observablehq.com/@observablehq/plot-tree-tidy-json",
+  "author": {
+    "name": "Observable",
+    "url": "https://observablehq.com/@observablehq"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
