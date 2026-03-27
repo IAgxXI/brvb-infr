@@ -47,11 +47,19 @@ function levelColor(d) {
   return DEPTH_COLORS[Math.min(d.depth, DEPTH_COLORS.length - 1)];
 }
 
-/* ── JSON location offset: shift a subtree vertically by node.data.location px ── */
-function applyLocationOffsets(node, accumulated) {
-  accumulated = (accumulated || 0) + (node.data.location || 0);
-  node.x += accumulated;
-  if (node.children) node.children.forEach(c => applyLocationOffsets(c, accumulated));
+/* ── JSON location offsets ───────────────────────────────────────────
+ *  "offsetY": 40   →  shift node (and all descendants) 40 px down
+ *  "offsetY": -40  →  shift node (and all descendants) 40 px up
+ *  "offsetX": 60   →  shift node (and all descendants) 60 px right (further from root)
+ *  "offsetX": -60  →  shift node (and all descendants) 60 px left  (closer to root)
+ *  Both can be combined on the same node.
+ * ─────────────────────────────────────────────────────────────────── */
+function applyLocationOffsets(node, accY, accX) {
+  accY = (accY || 0) + (node.data.offsetY || 0);
+  accX = (accX || 0) + (node.data.offsetX || 0);
+  node.x += accY;   // d3 tree: x is vertical axis
+  node.y += accX;   // d3 tree: y is horizontal axis
+  if (node.children) node.children.forEach(c => applyLocationOffsets(c, accY, accX));
 }
 
 /* ── Assign unique stable IDs to raw JSON data (once) ───────────── */
@@ -151,7 +159,7 @@ async function main() {
     root.descendants().forEach(d => { d.y = d.depth * H_GAP; });
 
     /* Apply any JSON-defined location offsets to subtrees */
-    applyLocationOffsets(root, 0);
+    applyLocationOffsets(root, 0, 0);
 
     /* ── Links ── */
     lLayer.selectAll('.link')
