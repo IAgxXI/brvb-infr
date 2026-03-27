@@ -64,19 +64,19 @@
    "name": "Personalo administratorė", "offsetY": -980, "offsetX": 0
   },
   {
-   "name": "Vyriausiasis buhalteris", "offsetY": -1000, "offsetX": 0,
+   "name": "Vyriausiasis buhalteris", "offsetY": -1020, "offsetX": 0,
    "children": [
     {"name": "Apskaitininkas", "size": 8833}
    ]
   },
   {
-   "name": "Kultūros projektų vadovas", "offsetY": -1020, "offsetX": 0
+   "name": "Kultūros projektų vadovas", "offsetY": -1040, "offsetX": 0
   },
   {
-   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1040, "offsetX": 0
+   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1060, "offsetX": 0
   },
   {
-   "name": "Ūkio skyriaus vedėjas", "offsetY": -1060, "offsetX": 0,
+   "name": "Ūkio skyriaus vedėjas", "offsetY": -1080, "offsetX": 0,
    "children": [
     {"name": "Elektrikas", "size": 8833, "offsetY": 80},
 	{"name": "Vairuotojas", "size": 8833, "offsetY": 40},
@@ -86,7 +86,7 @@
    ]
   },
   {
-   "name": "Archyvaras", "offsetY": -1080, "offsetX": 0
+   "name": "Archyvaras", "offsetY": -1100, "offsetX": 0
   }
  ]
 }
