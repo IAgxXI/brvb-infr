@@ -2,7 +2,7 @@
  "name": "Direktorius",
  "children": [
   {
-   "name": "Vartotojų aptarnavimo skyriaus vedėjas", "offsetY": -500, "offsetX": 0,
+   "name": "Vartotojų aptarnavimo skyriaus vedėjas", "offsetY": 500, "offsetX": 0,
    "children": [
     {"name": "Vyresn. bibliotekininkas", "size": 8833},
     {"name": "Vyresn. bibliotekininkas", "size": 1732},
@@ -17,7 +17,7 @@
    ]
   },
   {
-   "name": "Vaikų literatūros skyriaus vedėjas", "offsetY": -500, "offsetX": 0,
+   "name": "Vaikų literatūros skyriaus vedėjas", "offsetY": 500, "offsetX": 0,
    "children": [
     {"name": "Vyresn. bibliotekininkas", "size": 8833},
 	{"name": "Vyresn. bibliotekininkas", "size": 8833},
