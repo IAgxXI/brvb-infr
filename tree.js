@@ -3,7 +3,7 @@ const BOX_W   = 200;   // node box width in px 178
 const LINE_H  = 18;    // height per text line in px
 const V_PAD   = 6;     // top/bottom padding inside box
 const H_GAP   = 240;   // horizontal gap between depth levels
-const FONT_PX = 13;    // label font size in px
+const FONT_PX = 14;    // label font size in px
 const V_GAP   = 1;     // vertical gap between sibling boxes in px
 
 /* ── Text measurement & word-wrap ───────────────────────────────── */
