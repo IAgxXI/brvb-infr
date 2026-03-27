@@ -5,8 +5,6 @@ const V_PAD   = 6;     // top/bottom padding inside box
 const H_GAP   = 240;   // horizontal gap between depth levels
 const FONT_PX = 12;    // label font size in px
 const V_GAP   = 1;     // vertical gap between sibling boxes in px
-const LINK_EXIT = 18;  // horizontal run before entering sibling lane
-const LINK_LANE_GAP = 7; // spacing between sibling link lanes
 
 /* ── Text measurement & word-wrap ───────────────────────────────── */
 const _ctx = document.createElement('canvas').getContext('2d');
@@ -83,30 +81,12 @@ const nx  = d => d.y + off(d.data._id).dx;           // left edge X
 const ny  = d => d.x + off(d.data._id).dy;           // centre Y
 const ntl = d => `translate(${nx(d)},${ny(d) - boxH(d) / 2})`; // top-left corner
 
-/* ── Lane-routed elbow connector ───────────────────────────────────
- * Gives each sibling link a slightly different lane so connectors do not stack
- * directly on top of each other in dense child groups.
- */
-function routedElbow(link) {
+/* ── Right-angle elbow connector ─────────────────────────────────── */
+function elbow(link) {
   const sx = nx(link.source) + BOX_W, sy = ny(link.source);
   const tx = nx(link.target),         ty = ny(link.target);
-
-  // If a target is shifted too far left, fall back to a simple middle elbow.
-  if (tx <= sx + 12) {
-    const mx = (sx + tx) / 2;
-    return `M${sx},${sy} H${mx} V${ty} H${tx}`;
-  }
-
-  const siblings = (link.target.parent && link.target.parent.children) || [];
-  const count = Math.max(1, siblings.length);
-  const index = Math.max(0, siblings.findIndex(n => n.data._id === link.target.data._id));
-
-  // Center sibling lanes around source to distribute vertical trunks.
-  const center = (count - 1) / 2;
-  const laneOffset = (index - center) * LINK_LANE_GAP;
-  const laneX = Math.min(sx + LINK_EXIT + laneOffset, tx - 8);
-
-  return `M${sx},${sy} H${laneX} V${ty} H${tx}`;
+  const mx = (sx + tx) / 2;
+  return `M${sx},${sy} H${mx} V${ty} H${tx}`;
 }
 
 /* ── Main ────────────────────────────────────────────────────────── */
@@ -162,7 +142,7 @@ async function main() {
       o.dx += event.dx;
       o.dy += event.dy;
       d3.select(this).attr('transform', ntl(d));
-      lLayer.selectAll('.link').attr('d', routedElbow);
+      lLayer.selectAll('.link').attr('d', elbow);
     });
 
   /* Build / rebuild the tree layout */
@@ -188,7 +168,7 @@ async function main() {
       .data(root.links(), d => d.target.data._id)
       .join('path')
       .attr('class', 'link')
-      .attr('d', routedElbow);
+      .attr('d', elbow);
 
     /* ── Nodes ── */
     const nodeG = nLayer.selectAll('.node')
