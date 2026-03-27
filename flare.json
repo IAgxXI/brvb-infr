@@ -64,7 +64,10 @@
    "name": "Personalo administratorė", "offsetY": -980, "offsetX": 0
   },
   {
-   "name": "Archyvaras", "offsetY": -1000, "offsetX": 0
+   "name": "Vyriausiasis buhalteris", "offsetY": -1000, "offsetX": 0,
+   "children": [
+    {"name": "Apskaitininkas", "size": 8833}
+   ]
   },
   {
    "name": "Kultūros projektų vadovas", "offsetY": -1020, "offsetX": 0
@@ -75,18 +78,15 @@
   {
    "name": "Ūkio skyriaus vedėjas", "offsetY": -1060, "offsetX": 0,
    "children": [
-    {"name": "Elektrikas", "size": 8833, "offsetY": 40},
-	{"name": "Vairuotojas", "size": 8833, "offsetY": 20},
+    {"name": "Elektrikas", "size": 8833, "offsetY": 80},
+	{"name": "Vairuotojas", "size": 8833, "offsetY": 40},
 	{"name": "Darbininkas", "size": 8833, "offsetY": 0},
-	{"name": "Valytoja", "size": 8833, "offsetY": -20},
-	{"name": "Meistras", "size": 8833, "offsetY": -40}
+	{"name": "Valytoja", "size": 8833, "offsetY": -40},
+	{"name": "Meistras", "size": 8833, "offsetY": -80}
    ]
   },
   {
-   "name": "Vyriausiasis buhalteris", "offsetY": -1080, "offsetX": 0,
-   "children": [
-    {"name": "Apskaitininkas", "size": 8833}
-   ]
+   "name": "Archyvaras", "offsetY": -1080, "offsetX": 0
   }
  ]
 }
