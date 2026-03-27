@@ -91,6 +91,13 @@ function elbow(link) {
 
 /* ── Main ────────────────────────────────────────────────────────── */
 async function main() {
+  /* Detect URL parameter: if present, enable scroll wheel zoom */
+  const urlParams = new URLSearchParams(window.location.search);
+  const scrollZoomEnabled = urlParams.has('zoom') || urlParams.has('scroll');
+  const zoomHint = document.getElementById('zoomHint');
+  if (zoomHint && scrollZoomEnabled) {
+    zoomHint.textContent = ' &nbsp;|&nbsp; Scroll — zoom';
+  }
 
   /* Load data */
   let raw;
@@ -114,10 +121,10 @@ async function main() {
   const lLayer = g.append('g'); // links drawn below nodes
   const nLayer = g.append('g'); // nodes
 
-  /* Zoom / pan (scroll wheel disabled) */
+  /* Zoom / pan (scroll enabled only if ?zoom or ?scroll in URL) */
   const zoom = d3.zoom()
     .scaleExtent([0.04, 4])
-    .filter(e => e.type !== 'wheel')  // disable scroll zoom
+    .filter(e => scrollZoomEnabled || e.type !== 'wheel')  // allow wheel zoom if param set
     .on('zoom', e => g.attr('transform', e.transform));
   svg.call(zoom);
 

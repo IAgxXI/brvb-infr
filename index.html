@@ -45,6 +45,15 @@
       color: #aaa;
       pointer-events: none;
     }
+    @media print {
+      *, *::before, *::after { margin: 0; padding: 0; }
+      html, body { height: auto; overflow: visible; background: #fff; }
+      #controls { display: none !important; }
+      #hint { display: none !important; }
+      .patvirt { position: static; width: auto; margin-bottom: 20px; }
+      .spacer { display: none; }
+      #chart { width: 100%; height: auto; display: block; page-break-inside: avoid; }
+    }
   </style>
   <style> 
 	.patvirt {
@@ -76,7 +85,7 @@
   <button id="btnFit">&#8862; Fit to screen</button>
 </div>
 
-<div id="hint">Scroll — zoom &nbsp;|&nbsp; Drag canvas — pan &nbsp;|&nbsp; Drag box — move independently</div>
+<div id="hint">Drag canvas — pan &nbsp;|&nbsp; Drag box — move independently<span id="zoomHint"></span></div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="./tree.js"></script>
