@@ -28,27 +28,27 @@
   {
    "name": "Direktoriaus pavaduotoja", "offsetY": 0, "offsetX": 250,
    "children": [
-    {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Juostaviečių \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Skrebiškių  \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Kupreliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Kratiškių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Medeikių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Pabiržės \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Obelaukių \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Papilio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Pasvaliečių \n Bibliotekininkas", "size": 8833, "offsetY": 20},
+    {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833, "offsetY": 380},
+	{"name": "Juostaviečių \n Bibliotekininkas", "size": 8833, "offsetY": 360},
+	{"name": "Skrebiškių  \n Bibliotekininkas", "size": 8833, "offsetY": 320},
+	{"name": "Kupreliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 280},
+	{"name": "Kratiškių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 240},
+	{"name": "Medeikių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 200},
+	{"name": "Pabiržės \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 160},
+	{"name": "Obelaukių \n Bibliotekininkas", "size": 8833, "offsetY": 120},
+	{"name": "Papilio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 80},
+	{"name": "Pasvaliečių \n Bibliotekininkas", "size": 8833, "offsetY": 40},
 	{"name": "Germaniškio \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Kirdonių \n Bibliotekininkas", "size": 8833, "offsetY": -20},
-	{"name": "Kučgalio  \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Kvietkų \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Meilūnų \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Nausėdžių \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "N. Radviliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Pačeriaukštės \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Parovėjos \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Užušilių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Jono ir Adolfo Mekų palikimo studijų centras \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", "size": 8833}
+	{"name": "Kirdonių \n Bibliotekininkas", "size": 8833, "offsetY": -40},
+	{"name": "Kučgalio  \n Bibliotekininkas", "size": 8833, "offsetY": -80},
+	{"name": "Kvietkų \n Bibliotekininkas", "size": 8833, "offsetY": -120},
+	{"name": "Meilūnų \n Bibliotekininkas", "size": 8833, "offsetY": -160},
+	{"name": "Nausėdžių \n Bibliotekininkas", "size": 8833, "offsetY": -200},
+	{"name": "N. Radviliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -240},
+	{"name": "Pačeriaukštės \n Bibliotekininkas", "size": 8833, "offsetY": -280},
+	{"name": "Parovėjos \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -320},
+	{"name": "Užušilių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -360},
+	{"name": "Jono ir Adolfo Mekų palikimo studijų centras \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -380}
    ]
   },
   {
@@ -61,19 +61,19 @@
    ]
   },
   {
-   "name": "Personalo administratorė", "offsetY": -1020, "offsetX": 0
+   "name": "Personalo administratorė", "offsetY": -1060, "offsetX": 0
   },
   {
-   "name": "Vyriausiasis buhalteris", "offsetY": -1060, "offsetX": 0,
+   "name": "Vyriausiasis buhalteris", "offsetY": -1100, "offsetX": 0,
    "children": [
     {"name": "Apskaitininkas", "size": 8833}
    ]
   },
   {
-   "name": "Kultūros projektų vadovas", "offsetY": -1080, "offsetX": 0
+   "name": "Kultūros projektų vadovas", "offsetY": -1140, "offsetX": 0
   },
   {
-   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1080, "offsetX": 0
+   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1180, "offsetX": 0
   },
   {
    "name": "Ūkio skyriaus vedėjas", "offsetY": -1080, "offsetX": 0,
