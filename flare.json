@@ -52,28 +52,28 @@
    ]
   },
   {
-   "name": "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", "offsetY": -900, "offsetX": 0,
+   "name": "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", "offsetY": -950, "offsetX": 0,
    "children": [
-    {"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 50},
+    {"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 60},
 	{"name": "Bibliotekininkas", "size": 8833, "offsetY": 20},
 	{"name": "Bibliotekininkas", "size": 8833, "offsetY": -20},
-	{"name": "Bibliotekininkas", "size": 8833, "offsetY": -50}
+	{"name": "Bibliotekininkas", "size": 8833, "offsetY": -60}
    ]
   },
   {
-   "name": "Personalo administratorė", "offsetY": -800, "offsetX": 0
+   "name": "Personalo administratorė", "offsetY": -1000, "offsetX": 0
   },
   {
-   "name": "Archyvaras", "offsetY": -800, "offsetX": 0
+   "name": "Archyvaras", "offsetY": -1000, "offsetX": 0
   },
   {
-   "name": "Kultūros projektų vadovas", "offsetY": -800, "offsetX": 0
+   "name": "Kultūros projektų vadovas", "offsetY": -1000, "offsetX": 0
   },
   {
-   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -800, "offsetX": 0
+   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1000, "offsetX": 0
   },
   {
-   "name": "Ūkio skyriaus vedėjas", "offsetY": -800, "offsetX": 0,
+   "name": "Ūkio skyriaus vedėjas", "offsetY": -1000, "offsetX": 0,
    "children": [
     {"name": "Elektrikas", "size": 8833},
 	{"name": "Vairuotojas", "size": 8833},
@@ -83,7 +83,7 @@
    ]
   },
   {
-   "name": "Vyriausiasis buhalteris", "offsetY": -800, "offsetX": 0,
+   "name": "Vyriausiasis buhalteris", "offsetY": -1000, "offsetX": 0,
    "children": [
     {"name": "Apskaitininkas", "size": 8833}
    ]
