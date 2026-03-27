@@ -52,7 +52,7 @@
    ]
   },
   {
-   "name": "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", "offsetY": -950, "offsetX": 0,
+   "name": "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", "offsetY": -960, "offsetX": 0,
    "children": [
     {"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 60},
 	{"name": "Bibliotekininkas", "size": 8833, "offsetY": 20},
@@ -75,11 +75,11 @@
   {
    "name": "Ūkio skyriaus vedėjas", "offsetY": -1060, "offsetX": 0,
    "children": [
-    {"name": "Elektrikas", "size": 8833},
-	{"name": "Vairuotojas", "size": 8833},
-	{"name": "Darbininkas", "size": 8833},
-	{"name": "Valytoja", "size": 8833},
-	{"name": "Meistras", "size": 8833}
+    {"name": "Elektrikas", "size": 8833, "offsetY": 40},
+	{"name": "Vairuotojas", "size": 8833, "offsetY": 20},
+	{"name": "Darbininkas", "size": 8833, "offsetY": 0},
+	{"name": "Valytoja", "size": 8833, "offsetY": -20},
+	{"name": "Meistras", "size": 8833, "offsetY": -40}
    ]
   },
   {
