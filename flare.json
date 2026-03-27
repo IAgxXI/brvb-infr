@@ -64,16 +64,16 @@
    "name": "Personalo administratorė", "offsetY": -1060, "offsetX": 0
   },
   {
-   "name": "Vyriausiasis buhalteris", "offsetY": -1100, "offsetX": 0,
+   "name": "Vyriausiasis buhalteris", "offsetY": -1140, "offsetX": 0,
    "children": [
     {"name": "Apskaitininkas", "size": 8833}
    ]
   },
   {
-   "name": "Kultūros projektų vadovas", "offsetY": -1140, "offsetX": 0
+   "name": "Kultūros projektų vadovas", "offsetY": -1160, "offsetX": 0
   },
   {
-   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1180, "offsetX": 0
+   "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1200, "offsetX": 0
   },
   {
    "name": "Ūkio skyriaus vedėjas", "offsetY": -1080, "offsetX": 0,
