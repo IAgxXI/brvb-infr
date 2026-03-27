@@ -1,10 +1,10 @@
 /* ── Configuration ───────────────────────────────────────────────── */
 const BOX_W   = 178;   // node box width in px
-const LINE_H  = 10;    // height per text line in px
+const LINE_H  = 18;    // height per text line in px
 const V_PAD   = 6;     // top/bottom padding inside box
 const H_GAP   = 240;   // horizontal gap between depth levels
 const FONT_PX = 12;    // label font size in px
-const V_GAP   = 2;     // vertical gap between sibling boxes in px
+const V_GAP   = 1;     // vertical gap between sibling boxes in px
 
 /* ── Text measurement & word-wrap ───────────────────────────────── */
 const _ctx = document.createElement('canvas').getContext('2d');
