@@ -52,7 +52,7 @@
    ]
   },
   {
-   "name": "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", "offsetY": -960, "offsetX": 0,
+   "name": "Bibliotekininkystės ir informacijos išteklių skyriaus vedėjas", "offsetY": -980, "offsetX": 0,
    "children": [
     {"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 60},
 	{"name": "Bibliotekininkas", "size": 8833, "offsetY": 20},
@@ -61,16 +61,16 @@
    ]
   },
   {
-   "name": "Personalo administratorė", "offsetY": -980, "offsetX": 0
+   "name": "Personalo administratorė", "offsetY": -1000, "offsetX": 0
   },
   {
-   "name": "Vyriausiasis buhalteris", "offsetY": -1020, "offsetX": 0,
+   "name": "Vyriausiasis buhalteris", "offsetY": -1040, "offsetX": 0,
    "children": [
     {"name": "Apskaitininkas", "size": 8833}
    ]
   },
   {
-   "name": "Kultūros projektų vadovas", "offsetY": -1040, "offsetX": 0
+   "name": "Kultūros projektų vadovas", "offsetY": -1060, "offsetX": 0
   },
   {
    "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1060, "offsetX": 0
