@@ -4,6 +4,7 @@ const LINE_H  = 18;    // height per text line in px
 const V_PAD   = 8;     // top/bottom padding inside box
 const H_GAP   = 240;   // horizontal gap between depth levels
 const FONT_PX = 11;    // label font size in px
+const V_GAP   = 4;     // vertical gap between sibling boxes in px
 
 /* ── Text measurement & word-wrap ───────────────────────────────── */
 const _ctx = document.createElement('canvas').getContext('2d');
@@ -148,8 +149,9 @@ async function main() {
   function render() {
     const root = d3.hierarchy(raw);
 
-    /* Adaptive vertical size: 75 px per leaf ensures boxes never overlap */
-    const treeH = Math.max(window.innerHeight * 0.9, root.leaves().length * 75);
+    /* Adaptive vertical size: tallest leaf box + V_GAP per leaf, no artificial minimum */
+    const maxLeafH = Math.max(...root.leaves().map(l => boxH(l)));
+    const treeH = root.leaves().length * (maxLeafH + V_GAP);
 
     d3.tree()
       .size([treeH, 100])
