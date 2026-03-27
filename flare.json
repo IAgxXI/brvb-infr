@@ -28,27 +28,27 @@
   {
    "name": "Direktoriaus pavaduotoja", "offsetY": 0, "offsetX": 250,
    "children": [
-    {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833, "offsetY": 380},
-	{"name": "Juostaviečių \n Bibliotekininkas", "size": 8833, "offsetY": 360},
-	{"name": "Skrebiškių  \n Bibliotekininkas", "size": 8833, "offsetY": 320},
-	{"name": "Kupreliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 280},
-	{"name": "Kratiškių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 240},
-	{"name": "Medeikių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 200},
-	{"name": "Pabiržės \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 160},
-	{"name": "Obelaukių \n Bibliotekininkas", "size": 8833, "offsetY": 120},
-	{"name": "Papilio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 80},
-	{"name": "Pasvaliečių \n Bibliotekininkas", "size": 8833, "offsetY": 40},
+    {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833, "offsetY": 300},
+	{"name": "Juostaviečių \n Bibliotekininkas", "size": 8833, "offsetY": 270},
+	{"name": "Skrebiškių  \n Bibliotekininkas", "size": 8833, "offsetY": 240},
+	{"name": "Kupreliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 210},
+	{"name": "Kratiškių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 180},
+	{"name": "Medeikių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 150},
+	{"name": "Pabiržės \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 120},
+	{"name": "Obelaukių \n Bibliotekininkas", "size": 8833, "offsetY": 90},
+	{"name": "Papilio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 60},
+	{"name": "Pasvaliečių \n Bibliotekininkas", "size": 8833, "offsetY": 30},
 	{"name": "Germaniškio \n Bibliotekininkas", "size": 8833, "offsetY": 0},
-	{"name": "Kirdonių \n Bibliotekininkas", "size": 8833, "offsetY": -40},
-	{"name": "Kučgalio  \n Bibliotekininkas", "size": 8833, "offsetY": -80},
-	{"name": "Kvietkų \n Bibliotekininkas", "size": 8833, "offsetY": -120},
-	{"name": "Meilūnų \n Bibliotekininkas", "size": 8833, "offsetY": -160},
-	{"name": "Nausėdžių \n Bibliotekininkas", "size": 8833, "offsetY": -200},
-	{"name": "N. Radviliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -240},
-	{"name": "Pačeriaukštės \n Bibliotekininkas", "size": 8833, "offsetY": -280},
-	{"name": "Parovėjos \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -320},
-	{"name": "Užušilių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -360},
-	{"name": "Jono ir Adolfo Mekų palikimo studijų centras \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -380}
+	{"name": "Kirdonių \n Bibliotekininkas", "size": 8833, "offsetY": -30},
+	{"name": "Kučgalio  \n Bibliotekininkas", "size": 8833, "offsetY": -60},
+	{"name": "Kvietkų \n Bibliotekininkas", "size": 8833, "offsetY": -90},
+	{"name": "Meilūnų \n Bibliotekininkas", "size": 8833, "offsetY": -120},
+	{"name": "Nausėdžių \n Bibliotekininkas", "size": 8833, "offsetY": -150},
+	{"name": "N. Radviliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -180},
+	{"name": "Pačeriaukštės \n Bibliotekininkas", "size": 8833, "offsetY": -210},
+	{"name": "Parovėjos \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -240},
+	{"name": "Užušilių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -270},
+	{"name": "Jono ir Adolfo Mekų palikimo studijų centras \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -300}
    ]
   },
   {
@@ -70,13 +70,13 @@
    ]
   },
   {
-   "name": "Kultūros projektų vadovas", "offsetY": -1200, "offsetX": 0
+   "name": "Kultūros projektų vadovas", "offsetY": -1180, "offsetX": 0
   },
   {
    "name": "Informacinių technologijų ir bibliotekos paslaugų specialistas", "offsetY": -1220, "offsetX": 0
   },
   {
-   "name": "Ūkio skyriaus vedėjas", "offsetY": -1200, "offsetX": 0,
+   "name": "Ūkio skyriaus vedėjas", "offsetY": -1260, "offsetX": 0,
    "children": [
     {"name": "Elektrikas", "size": 8833, "offsetY": 80},
 	{"name": "Vairuotojas", "size": 8833, "offsetY": 40},
@@ -86,7 +86,7 @@
    ]
   },
   {
-   "name": "Archyvaras", "offsetY": -1200, "offsetX": 0
+   "name": "Archyvaras", "offsetY": -1260, "offsetX": 0
   }
  ]
 }
