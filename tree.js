@@ -35,10 +35,23 @@ function boxH(d) {
   return getLines(d.data.name).length * LINE_H + V_PAD * 2;
 }
 
+/* Color palette per depth level — all siblings share the same color */
+const DEPTH_COLORS = [
+  { fill: '#2c6e40', stroke: '#1a4427' }, // depth 0 – root green
+  { fill: '#4a2c6e', stroke: '#2e1a45' }, // depth 1 – purple
+  { fill: '#7a6e2a', stroke: '#4e4818' }, // depth 2 – gold
+  { fill: '#5a5a8a', stroke: '#3a3a60' }, // depth 3 – slate blue
+  { fill: '#8a3a3a', stroke: '#5a2020' }, // depth 4 – dark red
+];
 function levelColor(d) {
-  if (!d.parent)  return { fill: '#2c6e40', stroke: '#1a4427' }; // root   – green
-  if (d.children) return { fill: '#4a2c6e', stroke: '#2e1a45' }; // branch – purple
-  return                  { fill: '#7a6e2a', stroke: '#4e4818' }; // leaf   – gold
+  return DEPTH_COLORS[Math.min(d.depth, DEPTH_COLORS.length - 1)];
+}
+
+/* ── JSON location offset: shift a subtree vertically by node.data.location px ── */
+function applyLocationOffsets(node, accumulated) {
+  accumulated = (accumulated || 0) + (node.data.location || 0);
+  node.x += accumulated;
+  if (node.children) node.children.forEach(c => applyLocationOffsets(c, accumulated));
 }
 
 /* ── Assign unique stable IDs to raw JSON data (once) ───────────── */
@@ -102,7 +115,7 @@ async function main() {
     const W = window.innerWidth, H = window.innerHeight;
     const b = g.node().getBBox();
     if (!b.width) return;
-    const sc = Math.min(0.92, (W - 40) / b.width, (H - 40) / b.height);
+    const sc = Math.min(1.5, (W - 40) / b.width, (H - 40) / b.height);
     const tx = W / 2 - (b.x + b.width  / 2) * sc;
     const ty = H / 2 - (b.y + b.height / 2) * sc;
     svg.transition().duration(350)
@@ -136,6 +149,9 @@ async function main() {
 
     /* Pin each depth level to a fixed horizontal position */
     root.descendants().forEach(d => { d.y = d.depth * H_GAP; });
+
+    /* Apply any JSON-defined location offsets to subtrees */
+    applyLocationOffsets(root, 0);
 
     /* ── Links ── */
     lLayer.selectAll('.link')
