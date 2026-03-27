@@ -114,9 +114,10 @@ async function main() {
   const lLayer = g.append('g'); // links drawn below nodes
   const nLayer = g.append('g'); // nodes
 
-  /* Zoom / pan */
+  /* Zoom / pan (scroll wheel disabled) */
   const zoom = d3.zoom()
     .scaleExtent([0.04, 4])
+    .filter(e => e.type !== 'wheel')  // disable scroll zoom
     .on('zoom', e => g.attr('transform', e.transform));
   svg.call(zoom);
 
