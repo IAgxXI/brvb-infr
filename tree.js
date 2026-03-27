@@ -128,6 +128,54 @@ async function main() {
     .on('zoom', e => g.attr('transform', e.transform));
   svg.call(zoom);
 
+  let savedTransform = null;
+  let savedViewBox = null;
+  let savedPreserveAspectRatio = null;
+  let printPrepared = false;
+
+  function preparePrintLayout() {
+    if (printPrepared) return;
+    printPrepared = true;
+
+    savedTransform = d3.zoomTransform(svg.node());
+    savedViewBox = svg.attr('viewBox');
+    savedPreserveAspectRatio = svg.attr('preserveAspectRatio');
+
+    // Print should include the entire diagram, independent of current pan/zoom state.
+    svg.call(zoom.transform, d3.zoomIdentity);
+
+    const b = g.node().getBBox();
+    if (!b.width || !b.height) return;
+    const pad = 24;
+    const vb = [b.x - pad, b.y - pad, b.width + pad * 2, b.height + pad * 2].join(' ');
+    svg.attr('viewBox', vb).attr('preserveAspectRatio', 'xMidYMin meet');
+  }
+
+  function restoreAfterPrint() {
+    if (!printPrepared) return;
+
+    if (savedViewBox) svg.attr('viewBox', savedViewBox);
+    else svg.attr('viewBox', null);
+
+    if (savedPreserveAspectRatio) svg.attr('preserveAspectRatio', savedPreserveAspectRatio);
+    else svg.attr('preserveAspectRatio', null);
+
+    if (savedTransform) svg.call(zoom.transform, savedTransform);
+    printPrepared = false;
+  }
+
+  window.addEventListener('beforeprint', preparePrintLayout);
+  window.addEventListener('afterprint', restoreAfterPrint);
+  if (window.matchMedia) {
+    const mq = window.matchMedia('print');
+    const onPrintMediaChange = e => {
+      if (e.matches) preparePrintLayout();
+      else restoreAfterPrint();
+    };
+    if (mq.addEventListener) mq.addEventListener('change', onPrintMediaChange);
+    else if (mq.addListener) mq.addListener(onPrintMediaChange);
+  }
+
   function fitView() {
     const W = window.innerWidth, H = window.innerHeight;
     const b = g.node().getBBox();
