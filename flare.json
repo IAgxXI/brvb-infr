@@ -4,25 +4,25 @@
   {
    "name": "Vartotojų aptarnavimo skyriaus vedėjas", "offsetY": 1350, "offsetX": 250,
    "children": [
-    {"name": "Vyresn. bibliotekininkas", "size": 8833},
-    {"name": "Vyresn. bibliotekininkas", "size": 1732},
-    {"name": "Vyresn. bibliotekininkas", "size": 3623},
-    {"name": "Vyresn. bibliotekininkas", "size": 10066},
-	{"name": "Vyresn. bibliotekininkas", "size": 10066},
-	{"name": "Bibliotekininkas", "size": 10066},
-	{"name": "Bibliotekininkas", "size": 10066},
-	{"name": "Bibliotekininkas", "size": 10066},
-	{"name": "Bibliotekininkas", "size": 10066},
-	{"name": "Bibliotekininkas", "size": 10066}
+    {"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 100},
+    {"name": "Vyresn. bibliotekininkas", "size": 1732, "offsetY": 80},
+    {"name": "Vyresn. bibliotekininkas", "size": 3623, "offsetY": 60},
+    {"name": "Vyresn. bibliotekininkas", "size": 10066, "offsetY": 40},
+	{"name": "Vyresn. bibliotekininkas", "size": 10066, "offsetY": 20},
+	{"name": "Bibliotekininkas", "size": 10066, "offsetY": -20},
+	{"name": "Bibliotekininkas", "size": 10066, "offsetY": -40},
+	{"name": "Bibliotekininkas", "size": 10066, "offsetY": -60},
+	{"name": "Bibliotekininkas", "size": 10066, "offsetY": -80},
+	{"name": "Bibliotekininkas", "size": 10066, "offsetY": -100}
    ]
   },
   {
    "name": "Vaikų literatūros skyriaus vedėjas", "offsetY": 900, "offsetX": 0,
    "children": [
-    {"name": "Vyresn. bibliotekininkas", "size": 8833},
-	{"name": "Vyresn. bibliotekininkas", "size": 8833},
-	{"name": "Vyresn. bibliotekininkas", "size": 8833},
-	{"name": "Vyresn. bibliotekininkas", "size": 8833}
+    {"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 40},
+	{"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 20},
+	{"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": -20},
+	{"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": -40}
    ]
   },
   {
