@@ -2,7 +2,7 @@
  "name": "Direktorius",
  "children": [
   {
-   "name": "Vartotojų aptarnavimo skyriaus vedėjas", "offsetY": 1250, "offsetX": 0,
+   "name": "Vartotojų aptarnavimo skyriaus vedėjas", "offsetY": 1350, "offsetX": 0,
    "children": [
     {"name": "Vyresn. bibliotekininkas", "size": 8833, "offsetY": 180},
     {"name": "Vyresn. bibliotekininkas", "size": 1732, "offsetY": 140},
@@ -28,7 +28,7 @@
   {
    "name": "Direktoriaus pavaduotoja", "offsetY": 0, "offsetX": 250,
    "children": [
-    {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833, "offsetY": 300},
+    {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833, "offsetY": 280},
 	{"name": "Juostaviečių \n Bibliotekininkas", "size": 8833, "offsetY": 270},
 	{"name": "Skrebiškių  \n Bibliotekininkas", "size": 8833, "offsetY": 240},
 	{"name": "Kupreliškio \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": 210},
@@ -48,7 +48,7 @@
 	{"name": "Pačeriaukštės \n Bibliotekininkas", "size": 8833, "offsetY": -210},
 	{"name": "Parovėjos \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -240},
 	{"name": "Užušilių \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -270},
-	{"name": "Jono ir Adolfo Mekų palikimo studijų centras \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -300}
+	{"name": "Jono ir Adolfo Mekų palikimo studijų centras \n Vyr. bibliotekininkas \n Vyresn. bibliotekininkas", "size": 8833, "offsetY": -280}
    ]
   },
   {
