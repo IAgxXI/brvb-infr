@@ -26,7 +26,7 @@
    ]
   },
   {
-   "name": "Direktoriaus pavaduotoja", "offsetY": 0, "offsetX": 30,
+   "name": "Direktoriaus pavaduotoja", "offsetY": 0, "offsetX": 300,
    "children": [
     {"name": "Vabalninko \n Vyresn. bibliotekininkas \n Bibliotekininkas", "size": 8833},
 	{"name": "Juostaviečių \n Bibliotekininkas", "size": 8833},
